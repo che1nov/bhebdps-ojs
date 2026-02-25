@@ -3,13 +3,13 @@ describe("About Objects (about_objects.js)", function() {
   it("object type", function() {
     let emptyObject = {};
     // Какой тип у объектов?
-    expect(FILL_ME_IN).toBe(typeof emptyObject);
+    expect("object").toBe(typeof emptyObject);
   });
 
   it("object literal notation", function() {
     let person = {
-      FILL_ME_IN: FILL_ME_IN,
-      FILL_ME_IN: FILL_ME_IN
+      name: "Amory Blaine",
+      age: 102
     };
     // Какое имя у объекта person?
     expect("Amory Blaine").toBe(person.name);
@@ -19,8 +19,8 @@ describe("About Objects (about_objects.js)", function() {
 
   it("dynamically adding properties", function() {
     let person = {};
-    person.FILL_ME_IN = "Amory Blaine";
-    person.FILL_ME_IN = 102;
+    person.name = "Amory Blaine";
+    person.age = 102;
     // Какое имя у объекта person?
     expect("Amory Blaine").toBe(person.name);
     // Какое значение в свойстве age?
@@ -29,8 +29,8 @@ describe("About Objects (about_objects.js)", function() {
 
   it("adding properties from strings", function() {
     let person = {};
-    person["FILL_ME_IN"] = "Amory Blaine";
-    person["FILL_ME_IN"] = 102;
+    person["name"] = "Amory Blaine";
+    person["age"] = 102;
     // Какое имя у объекта person?
     expect("Amory Blaine").toBe(person.name);
     // Какое значение в свойстве age?
@@ -42,7 +42,7 @@ describe("About Objects (about_objects.js)", function() {
       name: "Amory Blaine",
       age: 102,
       toString: function() {
-        return FILL_ME_IN;  // Подсказка: используйте ключевое слово 'this' для обращения к объекту person.
+        return "I " + this.name + " am " + this.age + " years old.";  // Подсказка: используйте ключевое слово 'this' для обращения к объекту person.
       }
     };
     // Какое значение возвращает метод toString?
@@ -58,8 +58,8 @@ describe("About Objects (about_objects.js)", function() {
       values.push(person[propertyName]);
     }
     // Какие имена свойств у объекта?
-    expect(keys).toEqual([ FILL_ME_IN, FILL_ME_IN, FILL_ME_IN]);
+    expect(keys).toEqual(["name", "age", "unemployed"]);
     // Какие значения свойств у объекта?
-    expect(values).toEqual([ FILL_ME_IN, FILL_ME_IN, FILL_ME_IN]);
+    expect(values).toEqual(["Amory Blaine", 102, true]);
   });
 });

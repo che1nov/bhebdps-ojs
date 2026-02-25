@@ -1,12 +1,12 @@
 describe("About Asserts (about_asserts.js)", function() {
   it('should expect true', function() {
     // Ваше путешествие начинается здесь: Замените значение false на true 
-    expect(false).toBe(true);
+    expect(true).toBe(true);
   });
 
   // Чтобы понять результат теста, мы должны сравнить ожидаемое значение с реальным.
   it('should expect equality', function() {
-    let expectedValue = FILL_ME_IN;
+    let expectedValue = 2;
     let actualValue = 1 + 1;
 
     expect(actualValue === expectedValue).toBeTruthy();
@@ -14,7 +14,7 @@ describe("About Asserts (about_asserts.js)", function() {
 
   // Некоторые способы утверждения равенства лучше других.
   it('should assert equality a better way', function() {
-    let expectedValue = FILL_ME_IN;
+    let expectedValue = 2;
     let actualValue = 1 + 1;
 
   // toEqual() сравнивает, используя равенство эквивалетности.
@@ -23,7 +23,7 @@ describe("About Asserts (about_asserts.js)", function() {
 
   // Иногда нужно быть точным в том, что вы "печатаете".
   it('should assert equality with ===', function() {
-    let expectedValue = FILL_ME_IN;
+    let expectedValue = '2';
     let actualValue = (1 + 1).toString();
 
   // toBe() всегда использует строе равенство (===).
@@ -32,7 +32,7 @@ describe("About Asserts (about_asserts.js)", function() {
 
   // Иногда мы просим вас заполнить значения.
   it('should have filled in values', function() {
-    expect(1 + 1).toEqual(FILL_ME_IN);
+    expect(1 + 1).toEqual(2);
   });
 });
 

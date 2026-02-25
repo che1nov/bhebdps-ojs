@@ -3,7 +3,7 @@ describe("About Scope (about_scope.js)", function() {
 
   it("global variables", function() {
     // определено ли thisIsAGlobalVariable в этой области видимости?
-    expect(FILL_ME_IN).toBe(thisIsAGlobalVariable);
+    expect(77).toBe(thisIsAGlobalVariable);
   });
 
   it("variables declared inside of a function", function() {
@@ -13,14 +13,14 @@ describe("About Scope (about_scope.js)", function() {
     (function() {
       let innerVariable = "inner";
       // определено ли outerVariable в этой области видимости?
-      expect(FILL_ME_IN).toBe(outerVariable);
+      expect("outer").toBe(outerVariable);
       // определено ли innerVariable в этой области видимости?
-      expect(FILL_ME_IN).toBe(innerVariable);
+      expect("inner").toBe(innerVariable);
     })();
 
     // определено ли outerVariable в этой области видимости?
-    expect(FILL_ME_IN).toBe(outerVariable);
+    expect("outer").toBe(outerVariable);
     // определено ли innerVariable в этой области видимости?
-    expect(FILL_ME_IN).toBe(typeof(innerVariable));
+    expect("undefined").toBe(typeof(innerVariable));
   });
 });
