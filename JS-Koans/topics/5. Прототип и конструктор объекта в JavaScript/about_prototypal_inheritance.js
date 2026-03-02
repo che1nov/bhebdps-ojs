@@ -14,7 +14,7 @@ describe("About Prototypal Inheritance (about_prototypal_inheritance.js)", funct
     let eric  = new Mammal("Eric");
 
     // Что вернёт вызов метода?
-    expect(FILL_ME_IN).toBe(eric.sayHi());
+    expect("Hello, my name is Eric").toBe(eric.sayHi());
   });
 
   // Добавим ещё один метод в класс Mammal, который использует метод sayHi.
@@ -26,7 +26,7 @@ describe("About Prototypal Inheritance (about_prototypal_inheritance.js)", funct
     let bobby = new Mammal("Bobby");
 
      // Что вернёт вызов метода?
-    expect(FILL_ME_IN).toBe(bobby.favouriteSaying()); 
+    expect("Bobby's favourite saying is Hello, my name is Bobby").toBe(bobby.favouriteSaying()); 
   });
 
   it("calling functions added to a prototype after an object was created", function() {
@@ -38,7 +38,7 @@ describe("About Prototypal Inheritance (about_prototypal_inheritance.js)", funct
     // к прототипу Mammal после того, как paul был создан.
 
      // Что вернёт вызов метода?
-    expect(FILL_ME_IN).toBe(paul.numberOfLettersInName());
+    expect(4).toBe(paul.numberOfLettersInName());
   });
 
   // https://learn.javascript.ru/prototype-inheritance
@@ -59,9 +59,9 @@ describe("About Prototypal Inheritance (about_prototypal_inheritance.js)", funct
     let lenny = new Bat("Lenny", "1.5m");
 
      // Что вернёт вызов метода?
-    expect(FILL_ME_IN).toBe(lenny.sayHi());
+    expect("Hello, my name is Lenny").toBe(lenny.sayHi());
 
     // Что находится в свойстве wingspan?
-    expect(FILL_ME_IN).toBe(lenny.wingspan);
+    expect("1.5m").toBe(lenny.wingspan);
   });
 });

@@ -17,9 +17,9 @@ describe("About Reflection (about_reflection.js)", function() {
       keys.push(propertyName);
     }
     // Сколько элементов в массиве keys?
-    expect(FILL_ME_IN).toBe(keys.length);
+    expect(2).toBe(keys.length);
     // Какие это элементы?
-    expect([FILL_ME_IN, FILL_ME_IN]).toEqual(keys);
+    expect(["bprop", "aprop"]).toEqual(keys);
 
     // hasOwnProperty возвращает true, если параметр является свойством непосредственно объекта,
     // но не в том случае, если это свойство доступно через цепочку прототипов.
@@ -31,19 +31,19 @@ describe("About Reflection (about_reflection.js)", function() {
     }
 
     // Сколько элементов в массиве ownKeys?
-    expect(FILL_ME_IN).toBe(ownKeys.length);
+    expect(1).toBe(ownKeys.length);
     // Какие это элементы?
-    expect([FILL_ME_IN]).toEqual(ownKeys);
+    expect(["bprop"]).toEqual(ownKeys);
   });
 
   it("constructor property", function () {
     let a = new A();
     let b = new B();
     // Какой тип конструктора a?
-    expect(FILL_ME_IN).toBe(typeof a.constructor);
+    expect("function").toBe(typeof a.constructor);
     // Какое имя у конструктора a?
-    expect(FILL_ME_IN).toBe(a.constructor.name);
+    expect("A").toBe(a.constructor.name);
     // Какое имя у конструктора b?
-    expect(FILL_ME_IN).toBe(b.constructor.name);
+    expect("A").toBe(b.constructor.name);
   });
 });
