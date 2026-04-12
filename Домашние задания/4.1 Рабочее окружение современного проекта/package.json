@@ -1,0 +1,35 @@
+{
+  "name": "rpg-game",
+  "version": "1.0.0",
+  "description": "Учебный проект по настройке современного JS-окружения",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/che1nov/bhebdps-ojs.git"
+  },
+  "keywords": [
+    "rpg",
+    "javascript",
+    "netology"
+  ],
+  "author": "che1nov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@eslint/eslintrc": "^2.1.4",
+    "@eslint/js": "^8.57.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.4.0"
+  },
+  "dependencies": {
+    "core-js": "^3.37.1"
+  }
+}
