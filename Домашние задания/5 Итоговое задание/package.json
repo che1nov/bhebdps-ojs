@@ -1,0 +1,14 @@
+{
+  "name": "final-rpg-homework",
+  "version": "1.0.0",
+  "description": "Итоговое задание: RPG персонажи и поединки",
+  "main": "task.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "che1nov",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
