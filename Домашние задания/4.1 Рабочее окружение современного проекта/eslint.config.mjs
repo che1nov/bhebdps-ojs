@@ -13,7 +13,12 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['dist/**', 'eslint.config.mjs'],
+    ignores: [
+      'dist/**',
+      'coverage/**',
+      'node_modules/**',
+      'eslint.config.mjs',
+    ],
   },
   js.configs.recommended,
   ...compat.extends('airbnb-base'),
@@ -29,6 +34,21 @@ export default [
     },
     rules: {
       'no-console': 'off',
+    },
+  },
+  {
+    files: ['src/js/__tests__/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+  },
+  {
+    files: ['webpack.config.js'],
+    rules: {
+      'import/no-commonjs': 'off',
+      'global-require': 'off',
     },
   },
 ];
